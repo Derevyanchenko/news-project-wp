@@ -28,7 +28,7 @@ button {
 	display: block;
 	background: transparent;
 	cursor: pointer;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
 }
 
@@ -41,17 +41,18 @@ input {
 body {
 	color: #0F0F0F;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
+	background: #E5E5E5;
 }
 h1, h2 {
-	font-weight: 800;
-	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 h3,h4, h5, h6 {
-	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .container {

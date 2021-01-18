@@ -28,7 +28,7 @@ button {
   display: block;
   background: transparent;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
 }
 
@@ -39,22 +39,23 @@ input:focus {
 body {
   color: #0F0F0F;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
+  background: #E5E5E5;
 }
 
 h1,
 h2 {
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -569,6 +570,7 @@ h6 {
 }
 
 .header {
+  background: #fff;
   position: static;
   z-index: 999;
   top: 0;
@@ -984,6 +986,7 @@ h6 {
 }
 
 .footer {
+  margin-top: 135px;
   background: rgba(1, 99, 105, 0.85);
   text-align: center;
   color: #fff;
@@ -1090,6 +1093,7 @@ h6 {
   color: #FFFFFF;
   margin-bottom: 16px;
   max-width: 680px;
+  font-weight: 400 !important;
 }
 
 .banner__link {
@@ -1103,4 +1107,85 @@ h6 {
 
 .banner__link:hover {
   text-decoration: underline !important;
+}
+
+.article {
+  margin-bottom: 32px;
+  background: #fff;
+}
+
+.article__img {
+  position: relative;
+  height: 248px;
+}
+
+.article__img img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 248px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+}
+
+.article__img:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(27, 27, 27, 0.3);
+}
+
+.article__content {
+  padding: 16px;
+  padding-bottom: 44px;
+}
+
+.article__cat {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3F7D8A;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.article__cat:hover {
+  opacity: 0.7;
+}
+
+.article__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1E1E1E;
+}
+
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.article-column {
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.mainArticles {
+  padding-top: 32px;
 }
