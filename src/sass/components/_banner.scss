@@ -1,1 +1,37 @@
 // header
+
+.banner {
+    height: 507px;
+    background: url(../img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 113px;
+}
+
+.banner__line {
+    display: block;
+    width: 102px;
+    height: 2px;
+    background: #3F7D8A;
+    margin-bottom: 16px;
+}
+
+.banner__title {
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    max-width: 680px;
+}
+
+.banner__link {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &:hover {
+        text-decoration: underline !important;
+    }
+}

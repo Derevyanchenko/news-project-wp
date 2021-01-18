@@ -8,25 +8,37 @@
 
 
     .header__wrapper {
-        padding-top: 45px;
+        padding-top: 40px;
         padding-bottom: 40px;
     }
 
     &__copy {
         border-top: 1px solid #FFFFFF;
-        padding: 17px 0;
-        font-size: 14px;
-        line-height: 19px;
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 18px;
         color: #FFFFFF;
     }
 
-    .tel {
-        margin-right: 0;
+
+    .custom-logo-link {
+        color: #FFFCFC;
     }
 
-    .header__social {
-        display: none;
+    .menu-item a {
+        color: #fff;
     }
+
+    .menu-item {
+        &:hover,
+        &:focus {
+            transition: width 0.25s ease-out;
+            &:after {
+                background: #fff;
+            }
+        }
+    }
+
 }
 
 
