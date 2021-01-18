@@ -1,12 +1,23 @@
 /*style*/
 
-@import "base";
 @import "variables";
+@import "base";
 
 // partials
 
-@import "header";
-@import "footer";
+@import "components/header";
+@import "components/footer";
 
 // blocks
 
+@import "components/banner";
+@import "components/card";
+@import "components/pagination";
+@import "components/popular-articles-sidebar";
+@import "components/read-also";
+
+// pages style
+
+@import "pages/main";
+@import "pages/category";
+@import "pages/single";
