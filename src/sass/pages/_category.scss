@@ -10,3 +10,26 @@
         margin-bottom: 0;
     }
 }
+
+// media query
+
+@media (max-width: $lg) {
+
+    .category-title h1 {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width: $md) {
+
+    .category-title {
+        padding: 18px 16px;
+        h1 {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }    
+
+}

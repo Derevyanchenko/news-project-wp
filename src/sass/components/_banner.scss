@@ -4,8 +4,10 @@
     // height: 507px;
     background: url(../img/banner-bg.jpg) no-repeat;
     background-size: cover;
+    // background-position: center;
     padding-top: 145px;
     padding-bottom: 167px;
+    
 }
 
 .banner__line {
@@ -39,4 +41,43 @@
         transition: all 0.3s;
         background: #F2F2F2;
     }
+}
+
+
+// media query
+
+@media (max-width: $lg) {
+
+    .banner__title {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 36px;
+    }
+
+    .banner__link {
+        padding: 14px 34px;
+    }
+
+}
+
+@media (max-width: $md) {
+
+    .banner {
+        // padding-top: 161px;
+        // padding-bottom: 194px;
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .banner__line {
+        width: 72px;
+    }
+
+    .banner__title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 32px;
+    }
+
+
 }

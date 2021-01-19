@@ -53,3 +53,24 @@
         }
     }
 }   
+
+
+// media
+
+@media (max-width: $lg) {
+
+    .show-all {
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: $md) {
+
+    .show-all {
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+}

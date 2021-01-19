@@ -89,12 +89,20 @@
         font-size: 14px;
         line-height: 16px;
     }
+
+    .footer {
+        margin-top: 100px;
+    }
 	
 }
 
 
 
 @media (max-width: $md) {
+
+    .footer {
+        margin-top: 73px;
+    }
 
     .footer {
 
