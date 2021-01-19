@@ -1,1 +1,55 @@
 // header
+
+.show-all {
+    margin-top: 40px;
+    margin-bottom: 49px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3F7D8A;
+}
+
+.pagination-wrapper {
+
+    .pagination {
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a.page-numbers {
+                font-size: 16px;
+                line-height: 1;
+                text-align: center;
+                color: #0B0B0B;
+                display: inline-block;
+                padding: 0 8px;
+            }
+            span.page-numbers.current {
+                display: inline-block;
+                padding: 0 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1;
+                color: #3F7D8A;
+            }
+            a.page-numbers.next {
+                padding-left: 23px;
+                font-size: 18px;
+                line-height: 1;
+                color: #0B0B0B;
+            }
+            span.page-numbers.dots {
+                display: inline-block;
+                padding: 0 8px;
+                font-size: 16px;
+                line-height: 1;
+            }
+
+        }
+    }
+}   

@@ -2,14 +2,24 @@
 
 
 .article {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
+    height: 100%;
     background: #fff;
 }
 
 .article__img {
     position: relative;
     height: 248px;
-
+    display: block;
+    overflow: hidden;
+    transition: all 0.3s;
+    &:hover {
+        transition: all 0.3s;
+        img {
+            transition: all 0.3s;
+            transform: scale(1.2);
+        }
+    }
     img {
         width: 100%;
         max-width: 100%;
@@ -17,6 +27,7 @@
         max-height: 248px;
         object-fit: cover;
         display: block;
+        transition: all 0.3s;
     }
     &:before {
         content: "";
@@ -27,15 +38,18 @@
         left: 0;
         right: 0;
         background: rgba(27, 27, 27, 0.3);
+        z-index: 999;
     }
 }
 
 .article__content {
     padding: 16px;
     padding-bottom: 44px;
+    display: block;
 }
 
 .article__cat {
+    display: block;
     margin-bottom: 2px;
     font-weight: 500;
     font-size: 16px;
@@ -69,4 +83,5 @@
     padding-right: 16px;
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
+    margin-bottom: 32px;
 }
