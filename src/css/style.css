@@ -553,18 +553,6 @@ h6 {
   }
 }
 
-.custom-logo-link {
-  margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.custom-logo-link img {
-  max-width: 100%;
-  height: auto;
-}
-
 .burger {
   display: none;
 }
@@ -800,20 +788,16 @@ h6 {
 }
 
 @media (max-width: 1440px) {
-  .custom-logo-link {
-    max-width: 166px;
-  }
-
-  .header__tel {
-    margin-right: 35px;
-  }
-
   .menu-item {
     margin: 0 15px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+  .header__menu:not(.mobile-menu) {
+    display: none;
+  }
+
   .burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -861,48 +845,6 @@ h6 {
     margin-bottom: 0;
   }
 
-  .header__menu:not(.mobile-menu) {
-    display: none;
-  }
-
-  .custom-logo-link {
-    max-width: 146px;
-    margin-top: 0;
-  }
-
-  .header__tel {
-    margin-right: 80px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .header__tel img {
-    margin-right: 5px;
-  }
-
-  .header__social-link {
-    margin-right: 26px;
-    max-width: 20px;
-    max-height: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .header__social-link img {
-    max-width: 100%;
-    height: auto;
-    max-height: 20px;
-  }
-}
-
-@media (max-width: 1000px) {
   .header__tel {
     margin-right: 38px;
   }
@@ -962,10 +904,6 @@ h6 {
 }
 
 @media (max-width: 480px) {
-  .custom-logo-link {
-    max-width: 127px;
-  }
-
   .mobileMenu-overlay.open .mobileMenu {
     max-width: 340px;
   }
@@ -1034,20 +972,21 @@ h6 {
     display: -ms-flexbox;
     display: flex;
   }
-
-  .footer .header__wrapper {
-    padding-top: 30px;
-    padding-bottom: 25px;
-  }
 }
 
 @media (max-width: 1000px) {
-  .footer .tel {
-    margin-right: 35px;
+  .footer .header__wrapper {
+    padding: 30px 0;
   }
 
-  .footer .header__wrapper {
-    padding-top: 25px;
+  .footer .custom-logo-link {
+    font-size: 30px;
+  }
+
+  .footer__copy {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -1059,15 +998,19 @@ h6 {
   .footer .tel img {
     margin-right: 5px;
   }
-}
 
-@media (max-width: 480px) {
-  .footer .tel {
-    margin-right: 0;
+  .footer .header__wrapper {
+    padding: 16px 0;
   }
 
-  .footer .header__social {
-    display: none;
+  .footer .custom-logo-link {
+    font-size: 24px;
+  }
+
+  .footer__copy {
+    padding: 12px 0;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
