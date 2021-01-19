@@ -1276,3 +1276,17 @@ h6 {
 .mainArticles {
   padding-top: 32px;
 }
+
+.category-title {
+  padding: 22px 16px;
+  background: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.category-title h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px;
+  color: #3F7D8A;
+  margin-bottom: 0;
+}
