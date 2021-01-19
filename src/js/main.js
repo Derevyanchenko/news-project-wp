@@ -1,48 +1,22 @@
 $(document).ready(function() {
 
-  // open mob menu
 
-    $(".header__toggle").on("click", function(e) {
-        e.preventDefault();
-        $(".header-mob").slideToggle();
-        $(this).toggleClass("header__toggle--active");
-    });
+	// burger
 
-  // banner slider
+	$(".open-menu-js").on("click", function() {
 
-  $('.banner__slider').slick({
-      dots: false,
-      arrows: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      speed: 300,
-      fade: true,
-      cssEase: 'linear',
-      appendDots: $(".banner__dots"),
-      prevArrow: $(".banner-prev"),
-      nextArrow: $(".banner-next"),
-      responsive: [
-        {
-          breakpoint: 2500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-            dots: true
-          }
-        }
-      ]
-    }); 
+		$(".mobileMenu-overlay").addClass("open");
+		$("body, html").css("overflow-y", "hidden");
 
+	});
 
+	// burger close
+
+	$(".mobileMenu__close").on("click", function() {
+
+		$(".mobileMenu-overlay").removeClass("open");
+		$("body, html").css("overflow-y", "");
+
+	});
 
 });
