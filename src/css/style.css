@@ -59,7 +59,7 @@ h6 {
 }
 
 .container {
-  max-width: 1432px;
+  max-width: 1412px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -578,7 +578,7 @@ h6 {
 }
 
 .header__wrapper {
-  padding: 24px 0;
+  padding: 26px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,7 +974,7 @@ h6 {
 }
 
 .footer .header__wrapper {
-  padding-top: 40px;
+  padding-top: 43px;
   padding-bottom: 40px;
 }
 
@@ -992,6 +992,7 @@ h6 {
 
 .footer .menu-item a {
   color: #fff;
+  text-transform: initial;
 }
 
 .footer .menu-item:hover,
