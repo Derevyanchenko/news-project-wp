@@ -118,6 +118,11 @@
                 line-height: 16px;
                 color: #FFFFFF;
             }
+            transition: all 0.3s;
+            &:hover {
+                transition: all 0.3s;
+                background: #3A7582;
+            }
         }
     }
 
@@ -154,6 +159,11 @@
                 font-size: 17px;
                 line-height: 26px;
                 color: #1E1E1E;
+                transition: all 0.3s;
+                &:hover {
+                    transition: all 0.3s;
+                    color: #3A7582;
+                }
             }
         }
 
@@ -170,6 +180,11 @@
                 font-size: 17px;
                 line-height: 26px;
                 color: #1E1E1E;
+                transition: all 0.3s;
+                &:hover {
+                    transition: all 0.3s;
+                    color: #3A7582;
+                }
             }
         }
 

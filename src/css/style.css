@@ -1561,6 +1561,8 @@ h6 {
   background: #54A0B0;
   padding: 7px 17px;
   margin-right: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .singleArticle__categories ul li:last-child {
@@ -1572,6 +1574,12 @@ h6 {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.singleArticle__categories ul li:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #3A7582;
 }
 
 .singleArticle__share {
@@ -1615,6 +1623,14 @@ h6 {
   font-size: 17px;
   line-height: 26px;
   color: #1E1E1E;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.singleArticle__pagination .nav-single .nav-previous span:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #3A7582;
 }
 
 .singleArticle__pagination .nav-single .nav-next {
@@ -1638,4 +1654,12 @@ h6 {
   font-size: 17px;
   line-height: 26px;
   color: #1E1E1E;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.singleArticle__pagination .nav-single .nav-next span:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #3A7582;
 }
