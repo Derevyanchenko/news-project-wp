@@ -37,7 +37,7 @@ input:focus {
 }
 
 body {
-  color: #0F0F0F;
+  color: #1E1E1E;
   font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -1138,7 +1138,6 @@ h6 {
 }
 
 .article {
-  height: 100%;
   background: #fff;
 }
 
@@ -1234,6 +1233,17 @@ h6 {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
   margin-bottom: 32px;
+}
+
+.article-column .article {
+  height: 100%;
+}
+
+.articles.two-columns .article-column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 @media (max-width: 1440px) {
@@ -1377,6 +1387,23 @@ h6 {
   }
 }
 
+.widget-title {
+  padding: 16px;
+  background: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.widget-title p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1E1E1E;
+}
+
+.widget-popular-articles .article {
+  margin-bottom: 32px;
+}
+
 .mainArticles {
   padding-top: 32px;
 }
@@ -1411,4 +1438,204 @@ h6 {
     font-size: 28px;
     line-height: 30px;
   }
+}
+
+.singleArticle__wrapper {
+  padding-top: 32px;
+}
+
+.singleArticle__content {
+  background: #fff;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.singleArticle__editor {
+  padding-bottom: 16px;
+}
+
+.singleArticle__editor h1,
+.singleArticle__editor h2,
+.singleArticle__editor h3,
+.singleArticle__editor h4,
+.singleArticle__editor h5,
+.singleArticle__editor h6 {
+  margin-bottom: 24px;
+}
+
+.singleArticle__editor h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+.singleArticle__editor h2 {
+  font-size: 36px;
+  line-height: 41px;
+  font-weight: 400;
+}
+
+.singleArticle__editor h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.singleArticle__editor h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.singleArticle__editor h5 {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.singleArticle__editor h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.singleArticle__editor p {
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.singleArticle__editor img {
+  display: block;
+  max-width: 100%;
+}
+
+.singleArticle__editor .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.singleArticle__editor .images .image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.singleArticle__editor .images .image p {
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.singleArticle__see-olso {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 48px;
+}
+
+.singleArticle__see-olso a {
+  font-weight: 700;
+  color: #53A0B0;
+}
+
+.singleArticle__categories {
+  margin-bottom: 48px;
+}
+
+.singleArticle__categories ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.singleArticle__categories ul li {
+  background: #54A0B0;
+  padding: 7px 17px;
+  margin-right: 24px;
+}
+
+.singleArticle__categories ul li:last-child {
+  margin-right: 0;
+}
+
+.singleArticle__categories ul li a {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.singleArticle__share {
+  margin-bottom: 48px;
+}
+
+.singleArticle__pagination {
+  margin-bottom: 16px;
+}
+
+.singleArticle__pagination .nav-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.singleArticle__pagination .nav-single .nav-previous {
+  margin: 0 70px;
+}
+
+.singleArticle__pagination .nav-single .nav-previous a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.singleArticle__pagination .nav-single .nav-previous img {
+  margin-right: 10px;
+}
+
+.singleArticle__pagination .nav-single .nav-previous span {
+  font-size: 17px;
+  line-height: 26px;
+  color: #1E1E1E;
+}
+
+.singleArticle__pagination .nav-single .nav-next {
+  margin: 0 70px;
+}
+
+.singleArticle__pagination .nav-single .nav-next a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.singleArticle__pagination .nav-single .nav-next img {
+  margin-left: 10px;
+}
+
+.singleArticle__pagination .nav-single .nav-next span {
+  font-size: 17px;
+  line-height: 26px;
+  color: #1E1E1E;
 }
